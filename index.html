@@ -2,62 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio wevsite</title>
+    <title>Personal Portfolio website</title>
 
+    <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="logo">Portfolio.</a>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Resume </a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+     <header>
+        <a href="#" class="logo">PM(Utsa).</a>
 
-    <div class="bars-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-    </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Resume</a>
+            <a href="#">Poetfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section-->
     <section class="home">
-        <div class="home-info">
+        <div class="home-detail">
             <h1>Partha Majumder</h1>
-            <h2>I'm a 
-                <span style="--i:4;" data-text="Mobile Developer"> Mobile Developer</span>
-                <span style="--i:3;" data-text="Youtuber"> Youtuber</span>
-                <span style="--i:2;" data-text="Designer"> Designer</span>
-                <span style="--i:1;" data-text="Photograper"> Photograper</span>
+            <h2>I'm a Coder
+                <span style="--i:4;" data-text="Coder">Coder</span>
+                <span style="--i:3;" data-text="Youtuber">Youtuber</span>
+                <span style="--i:2;" data-text="Blogger">Blogger</span>
+                <span style="--i:1;" data-text="Designer">Designer</span>
             </h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Beatae aut minus, itaque velit nisi exercitationem alias
-                dolores id officiis similique hic dit odit eaque ipsam. 
-                Aperiam voluptatum blanditiis sint pariatur totam.
-            </p>
-
-            <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
-                <div class="sci">
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-youtube'></i></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam in modi praesentium? Qui id corporis, 
+                aperiam dicta itaque pariatur est quo sunt cumque harum adipisci amet. Voluptas, enim consequatur.</p>
+                <div class="btn-sci">
+                    <a href="#" class="btn">Download CV</a>
+                    <div class="sci">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-discord-alt'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
                 </div>
-            </div>
         </div>
-
-        <!--Image using-->
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
@@ -65,12 +56,11 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- services section -->
 
-    <section class="services">
+    <section class="services active">
         <h2 class="heading">My <span>Services</h2>
             <div class="services-container">
                 <div class="services-box">
@@ -339,7 +329,7 @@
      </section>
 
     <!-- portfolio section -->
-     <section class="portfolio active">
+     <section class="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -347,8 +337,8 @@
                 <div class="portfolio-detail active">
                     <p class="numb">01</p>
                     <h3>Forntend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
-                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
+                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p1>
                     <div class="tech">
                         <p>HTML, CSS, JavaScript</p>
                     </div>
@@ -360,22 +350,72 @@
 
                 <div class="portfolio-detail">
                     <p class="numb">02</p>
+                     <h3>Full Stack Project</h3>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
+                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p1>
+                    <div class="tech">
+                        <p>MongoDB, Exptess, React js, Node.js</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">03</p>
+                     <h3>Flutter Project</h3>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
+                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p1>
+                    <div class="tech">
+                        <p>Firebase, SQL lite.</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">04</p>
+                     <h3>Android Project</h3>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
+                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p1>
+                    <div class="tech">
+                        <p>Java,REST API, Firebase</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">05</p>
+                     <h3>Recat js Project</h3>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
+                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p1>
+                    <div class="tech">
+                        <p>MongoDB, Node.js, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">06</p>
+                     <h3>Web Project</h3>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim
+                        corporis esse facilis tempore assumenda quidem quaerat expedita.</p1>
+                    <div class="tech">
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
             </div>
@@ -406,12 +446,57 @@
                  
 
                  <div class="navigation">
-                    <button class="arrow-left"><i class='bx bx-chevron-left'></i></button>
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
                     <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
                  </div>
             </div>
         </div>
      </section>
+
+     <!-- contact section -->
+      <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima dolore libero illo earum ullam error aliquam possimus,
+                     distinctio debitis praesentium vero animi.</p>
+                     <div class="contact-detail">
+                        <i class='bx bxs-phone'></i>
+                        <div class="detail">
+                            <p>Phone</p>
+                            <p>(+88) 01876463000</p>
+                        </div>
+                     </div>
+                      <div class="contact-detail">
+                        <i class='bx bxs-envelope'></i>
+                        <div class="detail">
+                            <p>Mail</p>
+                            <p>parthamajumder@gmail.com</p>
+                        </div>
+                     </div>
+                     <div class="contact-detail">
+                        <i class='bx bxs-map'></i>
+                        <div class="detail">
+                            <p>Address</p>
+                            <p>Barura, Cumilla, BANGLADESH</p>
+                        </div>
+                     </div>   
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email"placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+      </section>
     
 
     <!--custom js-->
